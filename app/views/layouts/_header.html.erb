@@ -2,18 +2,18 @@
 
 <div class="row">
 
-  <div class="large-12 columns">
+  <div class="medium-12 columns">
     <div id='cssmenu'>
       <ul class="center">
-         <li class='active'><%= link_to "Home", root_path %></li>
+         <li><%= link_to "Home", root_path %></li>
          
-         <li><a href='#'><span>Products</span></a></li>
+         <li><%= link_to "Products", products_path %><li>
          
          <li><a href="#"><span>View Cart</span></a></li>
          <li><%= link_to "Help", help_path %><li>
          <li><%= link_to "Contact", contact_path %></li>
          <li><%= link_to "Sign In", signin_path %></li>
-         <li class='last'><%= link_to "Sign Up", signup_path %></li>
+         <li class='last'><%= link_to "Create Account", signup_path %></li>
 
          
       </ul>

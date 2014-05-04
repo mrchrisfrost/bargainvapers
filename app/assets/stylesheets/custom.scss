@@ -29,7 +29,7 @@ body {
   clear: both;
 }
 #cssmenu {
-  zoom: 1;
+  zoom: 2;
   height: 69px;
   background: url(bottom-bg.png) repeat-x center bottom;
   border-radius: 10px;
@@ -44,9 +44,10 @@ body {
   list-style: none;
 }
 #cssmenu ul li a {
+ 
   display: block;
   height: 45px;
-  padding: 22px 30px 0;
+  padding: 22px 22px 0;
   margin: 4px 2px 0;
   border-radius: 2px 2px 0 0;
   text-decoration: none;

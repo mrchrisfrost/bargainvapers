@@ -6,6 +6,7 @@ gem 'rails', '4.1.0'
 gem 'foundation-rails'
 gem 'compass-rails'
 gem 'modernizer'
+gem 'sprockets'
 
 group :development, :test do 
 	gem 'sqlite3'

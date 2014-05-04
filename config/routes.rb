@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   match 'signin',           to: 'users#signin',               via: 'get'
   match 'signup',           to: 'users#new',                  via: 'get'
   match 'help',             to: 'static_pages#help',          via: 'get'         
-  match 'products',         to: 'product_pages#main',         via: 'get'
+  match 'products',         to: 'products_pages#index',       via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
