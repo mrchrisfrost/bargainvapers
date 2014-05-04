@@ -47,7 +47,7 @@ body {
  
   display: block;
   height: 45px;
-  padding: 22px 22px 0;
+  padding: 22px 15px 0;
   margin: 4px 2px 0;
   border-radius: 2px 2px 0 0;
   text-decoration: none;
@@ -55,6 +55,7 @@ body {
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   font-weight: 400;
+ 
   opacity: .9;
 }
 #cssmenu ul li:first-child a {
