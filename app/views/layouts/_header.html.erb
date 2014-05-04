@@ -5,15 +5,15 @@
   <div class="large-12 columns">
     <div id='cssmenu'>
       <ul class="center">
-         <li class='active'><%= link_to "Home", "#" %></li>
+         <li class='active'><%= link_to "Home", root_path %></li>
          
          <li><a href='#'><span>Products</span></a></li>
          
          <li><a href="#"><span>View Cart</span></a></li>
-         <li><a href="#"><span>Help</span></a></li>
-         <li><a href="#"><span>Contact</span></a></li>
-         <li><a href="#"><span>Sign In</span></a></li>
-         <li class='last'><a href="#"><span>Sign Up</span></a></li>
+         <li><%= link_to "Help", help_path %><li>
+         <li><%= link_to "Contact", contact_path %></li>
+         <li><%= link_to "Sign In", signin_path %></li>
+         <li class='last'><%= link_to "Sign Up", signup_path %></li>
 
          
       </ul>
