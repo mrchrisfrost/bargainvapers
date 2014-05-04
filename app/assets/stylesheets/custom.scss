@@ -1,0 +1,85 @@
+@import "foundation_and_overrides";
+
+body {
+	background-image: image-url('black-brushed-metal.jpg');
+	}
+
+.top-bar ul li a:hover {
+	background-color: transparent;
+}
+
+/* Menu CSS */#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  padding: 1px;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Capriola', sans-serif;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: '';
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu {
+  zoom: 1;
+  height: 69px;
+  background: url(bottom-bg.png) repeat-x center bottom;
+  border-radius: 10px;
+  width: auto;
+}
+#cssmenu ul {
+  background: url(nav-bg.png) repeat-x 4px 4px;
+  height: 85px;
+}
+#cssmenu ul li {
+  float: left;
+  list-style: none;
+}
+#cssmenu ul li a {
+  display: block;
+  height: 45px;
+  padding: 22px 30px 0;
+  margin: 4px 2px 0;
+  border-radius: 2px 2px 0 0;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  opacity: .9;
+}
+#cssmenu ul li:first-child a {
+  margin: 4px 2px 0 0;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+  background: url(images/color.png) center bottom;
+  display: block;
+  height: 37px;
+  margin-top: 0px;
+  padding-top: 26px;
+  color: #004f7c;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
+  opacity: 1;
+}
+
+
+.sidenav { 
+	list-style-type:none; 
+	border:solid 1px black; 
+	padding-left: 0px;
+	padding-right: 0px; 
+}
+
+.dropdown a {
+	border-top: solid 2px;
+	min-width: 500px;
+}

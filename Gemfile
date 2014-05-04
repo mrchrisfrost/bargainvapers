@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 gem 'foundation-rails'
 gem 'compass-rails'
+gem 'modernizer'
 
 group :development, :test do 
 	gem 'sqlite3'

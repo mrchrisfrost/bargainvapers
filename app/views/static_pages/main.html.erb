@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "/vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+  <% provide(:title, 'Main') %> 
+
+  <h1 align="center">Welcome to Bargain Vapers</h1>
+
+  <div class="row">
+
+    <div class="small-3 columns">
+
+      <section class="container">
+
+        <div class="dropdown">
+
+          <select name="one" class="dropdown-link">
+
+          <option value="">Mods</option>
+          <option value="1">Variable Voltage</option>
+          <option value="2">Variable Wattage</option>
+          <option value="3">VV & VW</option>
+
+          </select>
+    
+        </div>
+
+      <section class="container">
+    
+        <div class="dropdown">
+      
+          <select name="two" class="dropdown-link">
+          <option value="">Atomizers</option>
+          <option value="1">Option #1</option>
+          <option value="2">Option #2</option>
+          <option value="3">Option #3</option>
+      
+          </select>
+        
+        </div>
+
+
+      <section class="container">
+
+        <div class="dropdown">
+
+          <select name="three" class="dropdown-link">
+          <option value="">E-Liquids</option>
+          <option value="1">100% VG</option>
+          <option value="2">70/30 VG/PG</option>
+          <option value="3">50/50 VG/PG</option>
+          </select>
+        </div>
+
+        <div class="dropdown">
+      
+          <select name="four" class="dropdown-link">
+          <option value="">Batteries</option>
+          <option value="1">Mod Batteries</option>
+          <option value="2">E-Go Batteries</option>
+          <option value="3">Other Batteries</option>
+      
+          </select>
+        
+        </div>
+
+        <div class="dropdown">
+
+          <select name="five" class="dropdown-link">
+          <option value="">E-Cigarette Starter Kits</option>
+          <option value="1">Option #1</option>
+          <option value="2">Option #2</option>
+          <option a href="#">E-Go kits</a></option>
+          </select>
+
+        </div>
+
+        <div class="dropdown">
+
+          <select name="six" class="dropdown-link">
+          <option value="">Accessories</option>
+          <option value="1">Tanks</option>
+          <option value="2">Coils</option>
+          <option value="3">Chargers</option>
+          </select>
+        </div>
+
+      </section>
+      </section>
+
+
+
+    </div>
+
+
+    <div class="large-2 columns">
+      
+
+    </div>
+             
+            
+
+
+    <div class="large-7 columns">
+      
+      <ul data-orbit>
+        
+        <li><img src="/assets/svd.jpg" /></li>
+        <li><img src="/assets/smoketechzmax.jpg" /></li>
+        <li><img src="/assets/vamo.jpg" /></li>
+        <li><img src="/assets/itastemvp.png" /></li>
+        <li><img src="/assets/itastemini.jpeg" /></li>
+
+
+      </ul>
+
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    
+    <div class="medium-4 columns">
+      
+        
+    </div>
+    
+
+    </div>
+
+    <div class="small-2 columns">
+
+
+
+      
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="row">
+        <div class="large-12 columns">
+         
+        </div>
+    </div>
+
+
+    
+    <%= yield %>
+    <%= javascript_include_tag "application" %> 
+
+    <script src="assets/javascripts/foundation.js"></script>
+    <script src="assets/javascripts/foundation.orbit.js"></script>
+    <script src="assets/javascripts/foundation.topbar.js"></script> 
+    <script src="assets/javascripts/foundation.tooltip.js"></script> 
+    <script src="assets/javascripts/foundation.reveal.js"></script>
+    <script src="assets/javascripts/foundation.dropdown.js"></scripts>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
