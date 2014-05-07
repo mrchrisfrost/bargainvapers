@@ -8,6 +8,7 @@ gem 'compass-rails'
 gem 'modernizer'
 gem 'sprockets'
 
+
 group :development, :test do 
 	gem 'sqlite3'
 	gem 'rspec-rails'

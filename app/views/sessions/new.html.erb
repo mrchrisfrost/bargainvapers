@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bargain Vapers | Login</title>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "/vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+  <h1 align="center">Login Account</h1>
+    <div class="row">
+
+      <div class="small-4 columns">
+
+        <h3 align="center">Newest Products</h3>
+
+        <ul data-orbit>
+
+          <li><img src="/assets/omega_r.jpg" /></li>
+          <li><img src="/assets/protank3_r.jpg" /></li>
+          <li><img src="/assets/svoe_r.jpg" /></li>
+          <li><img src="/assets/iclear-30_r.jpg" /></li>
+
+        </ul>
+
+      </div>
+
+      
+      <div class="small-4 columns">
+        <%= form_for(:session, url: sessions_path) do |f| %> 
+
+          <%= f.label :email %> 
+          <%= f.text_field :email %>
+
+          <%= f.label :password %> 
+          <%= f.password_field :password %> 
+
+
+          <div align="center">
+          <%= f.submit "Login", class: "center large round button" %> 
+          </div>
+        <% end %> 
+
+    <p align="center">New Customer? <%= link_to "Create account", signup_path %> </p></div>
+
+      <div class="small-4 columns">
+      </div>
+
+    </div>
+
+
+ 
+   <%= yield %>
+    <%= javascript_include_tag "application" %> 
+
+    <script src="assets/javascripts/foundation.js"></script>
+    <script src="assets/javascripts/foundation.orbit.js"></script>
+    <script src="assets/javascripts/foundation.topbar.js"></script> 
+    <script src="assets/javascripts/foundation.tooltip.js"></script> 
+    <script src="assets/javascripts/foundation.reveal.js"></script>
+    <script src="assets/javascripts/foundation.dropdown.js"></scripts>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

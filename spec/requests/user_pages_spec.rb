@@ -22,7 +22,7 @@ describe "UserPages" do
 	describe "create account" do 
 		before { visit signup_path }
 
-		let(:submit) { "Create my account" }
+		let(:submit) { "Create Account" }
 
 		describe "with invalid information" do 
 			it "should not create user account" do 
@@ -36,9 +36,10 @@ describe "UserPages" do
 				fill_in "Email", 				with: "user@example.com"
 				fill_in "Password", 			with: "foobar"
 				fill_in "Confirmation", 		with: "foobar"
-				fill_in "Shipping Address", 	with: "123 Park St"
-				fill_in "State", 				with: "MA"
-				fill_in "Phone Number", 		with: "555-555-5555"
+				fill_in "Address", 				with: "123 Park St"
+				select	'Massachusetts',		from: 'State'
+				fill_in "Phone",		 		with: "555-555-5555"
+				fill_in "Zipcode", 				with: "55555"
 			end 
 
 			it "should create a user" do 

@@ -85,3 +85,19 @@ body {
 	border-top: solid 2px;
 	min-width: 500px;
 }
+
+#error_explanation {
+  color: #f00; 
+  ul{ 
+  margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error; 
+}
+
+.li a {
+  color: #fff;
+}
