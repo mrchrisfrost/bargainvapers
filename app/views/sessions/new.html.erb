@@ -32,6 +32,7 @@
 
       
       <div class="small-4 columns">
+      <p>
         <%= form_for(:session, url: sessions_path) do |f| %> 
 
           <%= f.label :email %> 
@@ -45,7 +46,7 @@
           <%= f.submit "Login", class: "center large round button" %> 
           </div>
         <% end %> 
-
+       </p>
     <p align="center">New Customer? <%= link_to "Create account", signup_path %> </p></div>
 
       <div class="small-4 columns">
